@@ -11,6 +11,7 @@ function App() {
       <div className="App">
         <AppBarNav />
         <Switch>
+          <Redirect exact from="/" to="/about" />
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
