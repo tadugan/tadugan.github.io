@@ -1,0 +1,8 @@
+.about-body {
+    margin: 16px;
+}
+
+.about-picture {
+    max-width: 320px;
+    border-radius: 50%;
+}
