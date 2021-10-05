@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from '/Users/Tim/Desktop/Prime Academy/Tier IV/react-portfolio/src/logo.svg';
 import './App.css';
 
 function App() {
