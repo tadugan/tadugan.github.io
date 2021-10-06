@@ -1,5 +1,6 @@
 .about-body {
     margin: 72px;
+    min-width: 400px;
 }
 
 .about-picture {
@@ -12,11 +13,20 @@
 }
 
 .about-biography {
-    min-width: 600px;
+    width: 400px;
     text-align: center;
 }
 
 .about-biography-text {
     text-align: justify;
-    margin: 0px 16px;
+    font-size: 1.25rem;
+}
+
+.about-button-container {
+    text-align: center;
+}
+
+.about-button {
+    width: 224px;
+    height: 56px;
 }
