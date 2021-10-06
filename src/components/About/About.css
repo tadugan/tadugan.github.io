@@ -1,8 +1,22 @@
 .about-body {
-    margin: 16px;
+    margin: 72px;
 }
 
 .about-picture {
     max-width: 320px;
     border-radius: 50%;
+}
+
+.about-description {
+    text-align: center;
+}
+
+.about-biography {
+    min-width: 600px;
+    text-align: center;
+}
+
+.about-biography-text {
+    text-align: justify;
+    margin: 0px 16px;
 }
