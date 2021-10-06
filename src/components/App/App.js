@@ -1,3 +1,4 @@
+import React from "react";
 import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import About from '../About/About';
 import AppBarNav from '../AppBarNav/AppBarNav';

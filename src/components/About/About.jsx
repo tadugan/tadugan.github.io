@@ -1,9 +1,18 @@
+import React from "react";
 import { Button, Grid, Typography } from '@mui/material';
 import picture from '/Users/Tim/Desktop/Prime Academy/Tier IV/react-portfolio/src/TimDuganPic.jpeg';
 import './About.css';
 import { AlternateEmail, Build, GitHub } from '@mui/icons-material';
+import { useHistory } from 'react-router';
 
 function About() {
+
+  const history = useHistory();
+
+  const pushHistory = (destination) => {
+      history.push(destination);
+  }
+
   return (
     <div className="about-body">
         <Grid
@@ -64,17 +73,19 @@ function About() {
                 className="about-button-container"
             >
                 <Grid item xs={12} sm={12} md={4}>
-                  <Button className="about-button" variant="contained" endIcon={<Build />}>
+                  <Button className="about-button" onClick={() => pushHistory('/portfolio')} variant="contained" endIcon={<Build />}>
                       My Project Gallery
                   </Button>
                 </Grid>
                 <Grid item xs={12} sm={12} md={4}>
-                  <Button className="about-button" variant="contained" endIcon={<GitHub />}>
-                      Checkout my Github
-                  </Button>
+                  <a className="about-github-link" target="_blank" href="https://github.com/tadugan" rel="noopener noreferrer">
+                    <Button className="about-button" variant="contained" endIcon={<GitHub />}>
+                        Checkout my Github
+                    </Button>
+                  </a>
                 </Grid>
                 <Grid item xs={12} sm={12} md={4}>
-                  <Button className="about-button" variant="contained" endIcon={<AlternateEmail />}>
+                  <Button className="about-button" onClick={() => pushHistory('/contact')} variant="contained" endIcon={<AlternateEmail />}>
                       Contact Me
                   </Button>
                 </Grid>
