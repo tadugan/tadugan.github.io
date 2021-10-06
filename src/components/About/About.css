@@ -1,0 +1,36 @@
+.about-body {
+    margin: 72px;
+    min-width: 400px;
+}
+
+.about-picture {
+    max-width: 320px;
+    border-radius: 50%;
+}
+
+.about-description {
+    text-align: center;
+}
+
+.about-biography {
+    width: 400px;
+    text-align: center;
+}
+
+.about-biography-text {
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.about-button-container {
+    text-align: center;
+}
+
+.about-button {
+    width: 224px;
+    height: 56px;
+}
+
+.about-github-link {
+    text-decoration: none;
+}

@@ -1,3 +1,4 @@
+import React from "react";
 import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import About from '../About/About';
 import AppBarNav from '../AppBarNav/AppBarNav';
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <AppBarNav />
         <Switch>
+          <Redirect exact from="/" to="/about" />
           <Route exact path="/about" component={About} />
           <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/contact" component={Contact} />
