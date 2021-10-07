@@ -1,4 +1,4 @@
 .app-body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    min-height: 80vh;
+    padding-bottom: 80px;
 }

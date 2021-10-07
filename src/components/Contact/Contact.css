@@ -1,3 +1,11 @@
 .contact-body {
-    min-height: 80vh;
+    margin: 48px;
+}
+
+.contact-link {
+    text-decoration: none;
+}
+
+.contact-button {
+    width: 304px;
 }
