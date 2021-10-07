@@ -4,6 +4,7 @@ import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import About from '../About/About';
 import AppBarNav from '../AppBarNav/AppBarNav';
 import Contact from '../Contact/Contact';
+import Footer from "../Footer/Footer";
 import Portfolio from '../Portfolio/Portfolio';
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/contact" component={Contact} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     </ThemeProvider>
