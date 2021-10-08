@@ -19,17 +19,23 @@ function Contact() {
               </Typography>
             </Grid>
             <Grid item>
-              <p>If you are looking add some fresh talent to your development team, feel free to connect with me.</p>
+              <div className="contact-text">
+                <p>If you are looking add some fresh talent to your development team, or you just want to chat about tech, please reach out!</p>
+                <p>Location: Minneapolis, MN</p>
+                <p>Open to Remote Positions: Yes</p>
+              </div>
             </Grid>
             <Grid item>
-              <Button className="contact-button" variant="outlined" startIcon={<Email />}>
-                timdugandeveloper@gmail.com
-              </Button>
+              <a className="footer-link" href="mailto:timdugandeveloper@gmail.com" target="_blank" rel="noopener noreferrer">
+                <Button className="contact-button" variant="outlined" startIcon={<Email />}>
+                  timdugandeveloper@gmail.com
+                </Button>
+              </a>
             </Grid>
             <Grid item>
               <a className="contact-link" target="_blank" href="https://github.com/tadugan" rel="noopener noreferrer">
                 <Button className="contact-button" variant="outlined" startIcon={<GitHub />}>
-                    Checkout my Github
+                  Checkout my Github
                 </Button>
               </a>
             </Grid>
