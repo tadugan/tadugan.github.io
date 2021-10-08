@@ -1,9 +1,33 @@
 import React from "react";
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Chip, Grid, Typography } from '@mui/material';
 import picture from '/Users/Tim/Desktop/Prime Academy/Tier IV/react-portfolio/src/TimDuganPic.jpeg';
 import './About.css';
 import { AlternateEmail, Build, GitHub } from '@mui/icons-material';
 import { useHistory } from 'react-router';
+
+const skillArray = [
+    'JavaScript',
+    'React',
+    'React Redux',
+    'Redux Saga',
+    'Node.js',
+    'Express.js',
+    'PostgreSQL',
+    'SQL',
+    'Axios',
+    'Ajax',
+    'C#',
+    '.NET',
+    'Entity Framework Core',
+    'Material UI',
+    'JEST',
+    'HTML',
+    'CSS',
+    'JQuery',
+    'Passport.js',
+    'REST API',
+    'And more!'
+]
 
 function About() {
 
@@ -63,11 +87,42 @@ function About() {
                       </Grid>
             </Grid>
             <Grid 
+                item 
+                container 
+                direction="column" 
+                justifyContent="center" 
+                alignItems="center"
+            >
+                <Grid item>
+                    <div className="about-skills-header">
+                        <Typography variant="h4" component="h3">Core Skills</Typography>
+                    </div>
+                </Grid>
+                <div className="about-skills">
+                    <Grid
+                        item
+                        container
+                        spacing={1}
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                    >
+                        {skillArray.map((skill, index) => {
+                            return (
+                                <Grid item key={index}>
+                                    <Chip label={skill} />
+                                </Grid>
+                            );
+                        })}
+                    </Grid>
+                </div>
+            </Grid>
+            <Grid 
                 item
                 container
                 spacing={2} 
                 direction="row"
-                justifyContent="space-evenly"
+                justifyContent="center"
                 alignItems="center"
                 xs={12} 
                 className="about-button-container"

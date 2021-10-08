@@ -23,6 +23,15 @@
     font-size: 1.25rem;
 }
 
+.about-skills-header {
+    margin-bottom: 16px;;
+}
+
+.about-skills {
+    max-width: 800px;
+    margin-bottom: 32px;
+}
+
 .about-button-container {
     text-align: center;
 }
