@@ -10,12 +10,12 @@ import { Grid } from "@mui/material";
 
 function ProjectCard( {project} ) {
     return (
-        <Card sx={{ maxWidth: 400 }}>
+        <Card className="project-card-content">
             <CardMedia
                 component="img"
-                height="160"
-                image="https://image.shutterstock.com/image-photo/single-ear-corn-isolated-on-260nw-793795156.jpg"
-                alt="Project image"
+                height="200"
+                image={project.image_url}
+                alt={project.name}
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
