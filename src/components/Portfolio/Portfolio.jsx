@@ -1,8 +1,9 @@
 import React from "react";
+import './Portfolio.css';
 
 function Portfolio() {
     return (
-      <div>
+      <div className="portfolio-body">
           <p>Portfolio Page</p>
       </div>
     );

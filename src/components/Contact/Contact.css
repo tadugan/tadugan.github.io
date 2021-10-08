@@ -1,0 +1,16 @@
+.contact-body {
+    margin: 48px;
+}
+
+.contact-link {
+    text-decoration: none;
+}
+
+.contact-button {
+    width: 304px;
+}
+
+.contact-text {
+    max-width: 600px;
+    text-align: center;
+}
