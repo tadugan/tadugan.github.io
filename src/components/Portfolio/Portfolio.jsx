@@ -12,6 +12,14 @@ const projectArray = [
     video_url: 'https://vimeo.com/590710799',
     code_url: 'https://github.com/tadugan/board-game-achievement-tracker',
     deployment_url: ''
+  },
+  {
+    name: 'STEMtelling',
+    description: 'STEMtelling is a Full Stack, high school classroom learning application. STEMtelling shows students the relevance of STEM in their lives and helps them share stories called “STEMtells” that connect their STEM interests with their unique backgrounds.',
+    image_url: '',
+    video_url: '',
+    code_url: 'https://github.com/tadugan/stemtelling',
+    deployment_url: ''
   }
 ]
 
