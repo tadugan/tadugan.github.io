@@ -19,10 +19,10 @@ function AppBarNav() {
               justifyContent="space-between" 
               alignItems="center"
             >
-              <Grid item xs={6}>
+              <Grid item>
                 <ConditionalTitle />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item>
                 <ConditionalMenu />
               </Grid>
             </Grid>

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 function ConditionalTitle() {
 
     const [width, setWidth] = useState(window.innerWidth);
-    const breakPoint = 480;
+    const breakPoint = 400;
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);

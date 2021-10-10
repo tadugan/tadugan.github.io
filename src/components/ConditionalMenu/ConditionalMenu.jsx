@@ -12,7 +12,7 @@ function ConditionalMenu() {
     const [width, setWidth] = useState(window.innerWidth);
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
-    const breakPoint = 480;
+    const breakPoint = 600;
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
