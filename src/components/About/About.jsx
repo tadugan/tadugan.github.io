@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Chip, Grid, Typography } from '@mui/material';
 import picture from '../../images/TimDuganPic.jpeg';
 import './About.css';
@@ -36,6 +36,10 @@ function About() {
   const pushHistory = (destination) => {
       history.push(destination);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="about-body">

@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import './Portfolio.css';
 import bgatImage from '../../images/AchievementTrackerScreenshot.png';
@@ -34,6 +34,11 @@ const projectArray = [
 ]
 
 function Portfolio() {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="portfolio-body">
           <Grid
