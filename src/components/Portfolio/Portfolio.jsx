@@ -19,13 +19,13 @@ const projectArray = [
     name: 'STEMtelling',
     description: 'STEMtelling is a Full Stack, high school classroom learning application. STEMtelling shows students the relevance of STEM in their lives and helps them share stories called “STEMtells” that connect their STEM interests with their unique backgrounds.',
     image_url: stemtellingImage,
-    video_url: '',
+    video_url: 'https://vimeo.com/628303224',
     code_url: 'https://github.com/tadugan/stemtelling',
     deployment_url: ''
   },
   {
     name: 'Portfolio Website',
-    description: 'This website was created built in React, using Material UI and CSS for layout and styling.',
+    description: 'This website was built in React, using Material UI and CSS for layout and styling.',
     image_url: portfolioImage,
     video_url: '',
     code_url: 'https://github.com/tadugan/tim-dugan-portfolio',
