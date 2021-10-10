@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import ConditionalMenu from '../ConditionalMenu/ConditionalMenu';
 import ConditionalTitle from '../ConditionalTitle/ConditionalTitle';
+import { Grid } from '@mui/material';
 
 function AppBarNav() {
 
@@ -11,8 +12,20 @@ function AppBarNav() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
           <Toolbar>
-            <ConditionalTitle />
-            <ConditionalMenu />
+            <Grid
+              container 
+              spacing={0} 
+              direction="row" 
+              justifyContent="space-between" 
+              alignItems="center"
+            >
+              <Grid item xs={6}>
+                <ConditionalTitle />
+              </Grid>
+              <Grid item xs={6}>
+                <ConditionalMenu />
+              </Grid>
+            </Grid>
           </Toolbar>
         </AppBar>
       </Box>
