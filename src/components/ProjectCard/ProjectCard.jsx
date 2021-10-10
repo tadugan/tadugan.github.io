@@ -21,7 +21,7 @@ function ProjectCard( {project} ) {
                 <Typography gutterBottom variant="h5" component="div">
                 {project.name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" className="project-card-description">
                 {project.description}
                 </Typography>
             </CardContent>

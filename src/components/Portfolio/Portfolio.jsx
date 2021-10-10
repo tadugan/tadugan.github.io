@@ -2,7 +2,9 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import './Portfolio.css';
-import bgatImage from '/Users/Tim/Desktop/Prime Academy/Tier IV/react-portfolio/src/images/AchievementTrackerScreenshot.png';
+import bgatImage from '../../images/AchievementTrackerScreenshot.png';
+import stemtellingImage from '../../images/STEMtellingScreenshot.png';
+import portfolioImage from '../../images/PortfolioScreenshot.png';
 
 const projectArray = [
   {
@@ -11,6 +13,22 @@ const projectArray = [
     image_url: bgatImage,
     video_url: 'https://vimeo.com/590710799',
     code_url: 'https://github.com/tadugan/board-game-achievement-tracker',
+    deployment_url: ''
+  },
+  {
+    name: 'STEMtelling',
+    description: 'STEMtelling is a Full Stack, high school classroom learning application. STEMtelling shows students the relevance of STEM in their lives and helps them share stories called “STEMtells” that connect their STEM interests with their unique backgrounds.',
+    image_url: stemtellingImage,
+    video_url: 'https://vimeo.com/628303224',
+    code_url: 'https://github.com/tadugan/stemtelling',
+    deployment_url: ''
+  },
+  {
+    name: 'Portfolio Website',
+    description: 'This website was built in React, using Material UI and CSS for layout and styling.',
+    image_url: portfolioImage,
+    video_url: '',
+    code_url: 'https://github.com/tadugan/tim-dugan-portfolio',
     deployment_url: ''
   }
 ]
