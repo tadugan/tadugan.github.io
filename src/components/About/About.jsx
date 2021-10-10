@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Chip, Grid, Typography } from '@mui/material';
-import picture from '/Users/Tim/Desktop/Prime Academy/Tier IV/react-portfolio/src/TimDuganPic.jpeg';
+import picture from '../../images/TimDuganPic.jpeg';
 import './About.css';
 import { AlternateEmail, Build, GitHub } from '@mui/icons-material';
 import { useHistory } from 'react-router';
