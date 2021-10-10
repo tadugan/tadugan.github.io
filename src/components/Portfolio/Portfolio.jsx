@@ -28,7 +28,7 @@ const projectArray = [
     description: 'This website was built in React, using Material UI and CSS for layout and styling.',
     image_url: portfolioImage,
     video_url: '',
-    code_url: 'https://github.com/tadugan/tim-dugan-portfolio',
+    code_url: 'https://github.com/tadugan/tadugan.github.io',
     deployment_url: ''
   }
 ]
