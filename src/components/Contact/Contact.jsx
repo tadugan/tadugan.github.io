@@ -5,6 +5,10 @@ import './Contact.css';
 
 function Contact() {
 
+    const openLink = (url) => {
+        window.open(url);
+    }
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
@@ -31,25 +35,29 @@ function Contact() {
               </div>
             </Grid>
             <Grid item>
-              <a className="footer-link" href="mailto:timdugandeveloper@gmail.com" target="_blank" rel="noopener noreferrer">
-                <Button className="contact-button" variant="outlined" startIcon={<Email />}>
+                <Button component="a" href="mailto:timdugandeveloper@gmail.com" className="contact-button" variant="outlined" startIcon={<Email />}>
                   timdugandeveloper@gmail.com
                 </Button>
-              </a>
             </Grid>
             <Grid item>
-              <a className="contact-link" target="_blank" href="https://github.com/tadugan" rel="noopener noreferrer">
-                <Button className="contact-button" variant="outlined" startIcon={<GitHub />}>
+                <Button 
+                  className="contact-button" 
+                  onClick={() => openLink("https://github.com/tadugan")}
+                  variant="outlined" 
+                  startIcon={<GitHub />}
+                >
                   Checkout my Github
                 </Button>
-              </a>
             </Grid>
             <Grid item>
-              <a className="contact-link" target="_blank" href="https://www.linkedin.com/in/tim-dugan-engineer/" rel="noopener noreferrer">
-                <Button className="contact-button" variant="outlined" startIcon={<LinkedIn />}>
+                <Button 
+                  className="contact-button" 
+                  onClick={() => openLink("https://www.linkedin.com/in/tim-dugan-engineer/")}
+                  variant="outlined" 
+                  startIcon={<LinkedIn />}
+                >
                     Connect on LinkedIn
                 </Button>
-              </a>
             </Grid>
           </Grid>
       </div>

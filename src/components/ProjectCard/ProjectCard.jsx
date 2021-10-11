@@ -9,6 +9,11 @@ import './ProjectCard.css';
 import { Grid } from "@mui/material";
 
 function ProjectCard( {project} ) {
+
+    const openLink = (url) => {
+        window.open(url);
+    }
+
     return (
         <Card className="project-card-content">
             <CardMedia
@@ -35,21 +40,15 @@ function ProjectCard( {project} ) {
                 >
                     {project.video_url &&
                         <Grid item>
-                            <a href={project.video_url} target="_blank" rel="noopener noreferrer" className="project-card-button">
-                                <Button size="small">Video Demo</Button>
-                            </a>
+                            <Button size="small" onClick={() => openLink(project.video_url)} className="project-card-button">Video Demo</Button>
                         </Grid>}
                     {project.code_url &&
                         <Grid item>
-                            <a href={project.code_url} target="_blank" rel="noopener noreferrer" className="project-card-button">
-                                <Button size="small">View Code</Button>
-                            </a>
+                            <Button size="small" onClick={() => openLink(project.code_url)} className="project-card-button">View Code</Button>
                         </Grid>}
                     {project.deployment_url &&
                         <Grid item>
-                            <a href={project.deployment_url} target="_blank" rel="noopener noreferrer" className="project-card-button">
-                                <Button size="small">View Deployed App</Button>
-                            </a>
+                            <Button size="small" onClick={() => openLink(project.deployment_url)} className="project-card-button">View Deployed App</Button>
                         </Grid>}
                 </Grid>
             </CardActions>
