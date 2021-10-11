@@ -124,26 +124,26 @@ function About() {
             <Grid 
                 item
                 container
-                spacing={2} 
+                spacing={4} 
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
                 xs={12} 
                 className="about-button-container"
             >
-                <Grid item xs={12} sm={12} md={4}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={2}>
                   <Button className="about-button" onClick={() => pushHistory('/portfolio')} variant="contained" endIcon={<Build />}>
                       My Project Gallery
                   </Button>
                 </Grid>
-                <Grid item xs={12} sm={12} md={4}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={2}>
                   <a className="about-github-link" target="_blank" href="https://github.com/tadugan" rel="noopener noreferrer">
                     <Button className="about-button" variant="contained" endIcon={<GitHub />}>
                         Checkout my Github
                     </Button>
                   </a>
                 </Grid>
-                <Grid item xs={12} sm={12} md={4}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={2}>
                   <Button className="about-button" onClick={() => pushHistory('/contact')} variant="contained" endIcon={<AlternateEmail />}>
                       Contact Me
                   </Button>
