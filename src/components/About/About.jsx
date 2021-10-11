@@ -140,13 +140,6 @@ function About() {
                       My Project Gallery
                   </Button>
                 </Grid>
-                {/* <Grid item xs={12} sm={12} md={3} lg={3} xl={2}>
-                  <a className="about-github-link" target="_blank" href="https://github.com/tadugan" rel="noopener noreferrer">
-                    <Button className="about-button" variant="contained" endIcon={<GitHub />}>
-                        Checkout my Github
-                    </Button>
-                  </a>
-                </Grid> */}
                 <Grid item xs={12} sm={12} md={3} lg={3} xl={2}>
                     <Button className="about-button" onClick={() => openLink('https://github.com/tadugan')} variant="contained" endIcon={<GitHub />}>
                         Checkout my Github
