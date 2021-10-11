@@ -78,15 +78,15 @@ function About() {
                 container 
                 spacing={4} 
                 direction="row"
-                justifyContent="space-evenly"
+                justifyContent="center"
                 alignItems="flex-start"
                 xs={12} 
                 className="about-biography"
             >
-                      <Grid item xs={12} sm={12} md={6}>
+                      <Grid item xs={12} sm={12} md={3}>
                           <p className="about-biography-text">I am a Minneapolis-based Software Engineer, with a passion for creating and helping others through technology. With nearly a decade of Customer Service experience, I understand firsthand how well developed applications and websites can improve productivity and quality of life. I also understand that there are still countless areas of society that would benefit from quality, user-friendly applications. I am excited to be a part of the next generation of software developers.</p>
                       </Grid>
-                      <Grid item xs={12} sm={12} md={6}>
+                      <Grid item xs={12} sm={12} md={3}>
                           <p className="about-biography-text">I take a people-first approach to my work. Software development is collaborative by nature, so it's important to build a network of strong relationships with other tech-minded individuals. Even in my independent projects I rely on the knowledge and experience of others to help me produce the best possible product. When it comes to client work, people-first means understanding the client's needs and vision for the project. I believe it is important to understand the desired destination before beginning the journey.</p>
                       </Grid>
             </Grid>

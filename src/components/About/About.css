@@ -14,14 +14,15 @@
 }
 
 .about-biography {
-    min-width: 320px;
     text-align: center;
 }
 
 .about-biography-text {
+    max-width: 400px;
     text-align: justify;
     padding: 0px 24px;
     font-size: 1.25rem;
+    margin: auto;
 }
 
 .about-skills-header {
