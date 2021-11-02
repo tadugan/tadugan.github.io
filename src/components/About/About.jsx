@@ -13,6 +13,7 @@ const skillArray = [
     'Node.js',
     'Express.js',
     'PostgreSQL',
+    'MongoDB',
     'SQL',
     'Axios',
     'Ajax',
